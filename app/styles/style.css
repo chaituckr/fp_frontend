@@ -1,0 +1,15 @@
+.header{
+  height: 50px;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.text-muted {
+  color: #777;
+  font-weight: bold;
+}
+
+.login-input{
+  margin-bottom: 2% !important;
+  border-radius: 3px !important;
+}

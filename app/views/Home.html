@@ -1,0 +1,29 @@
+<div class="container">
+  <header class="header">
+    <nav class="nav nav-pills pull-right">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </nav>
+    <h3 class="text-muted glyphicon glyphicon-piggy-bank">FP</h3>
+  </header>
+
+  <div class="jumbotron" style="height: 500px" ng-controller="MainCtrl">
+    <aside class="input-group pull-right well" style="width:30%">
+      <section>
+        <input type="text" class="form-control login-input" placeholder="Username" aria-describedby="sizing-addon2" ng-model="username">
+        <br>
+        <input type="password" class="form-control login-input" placeholder="Password" aria-describedby="sizing-addon2" ng-model="password">
+        <span class="btn btn-info" ng-click="loginUser(username, password)">Login</span>
+        <span><a>Forgot Password</a></span>
+        <hr>
+        <span class="btn btn-info">Register Now</span> OR
+
+      </section>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <p style="font-weight: bold">♥ from CKR</p>
+  </footer>
+</div>
