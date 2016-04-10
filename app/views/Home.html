@@ -11,16 +11,43 @@
   <div class="jumbotron" style="height: 500px" ng-controller="MainCtrl">
     <aside class="input-group pull-right well" style="width:30%">
       <section>
-        <input type="text" class="form-control login-input" placeholder="Username" aria-describedby="sizing-addon2" ng-model="username">
+        <input type="text" class="form-control login-input" placeholder="Username" aria-describedby="sizing-addon2" ng-model="usrname">
         <br>
-        <input type="password" class="form-control login-input" placeholder="Password" aria-describedby="sizing-addon2" ng-model="password">
-        <span class="btn btn-info" ng-click="loginUser(username, password)">Login</span>
+        <input type="password" class="form-control login-input" placeholder="Password" aria-describedby="sizing-addon2" ng-model="pword">
+        <span class="btn btn-info" ng-click="loginUser(usrname, pword)">Login</span>
         <span><a>Forgot Password</a></span>
         <hr>
-        <span class="btn btn-info">Register Now</span> OR
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#regModal">Register Now</button>
 
       </section>
     </aside>
+
+    <div class="modal fade" id="regModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">New User Registration</h4>
+          </div>
+          <form>
+            <div class="modal-body">
+              <input type="text" class="form-control form-group login-input" placeholder="Name" aria-describedby="sizing-addon2" style="width: 50%" ng-model="name" required/>
+              <input type="text" class="form-control form-group login-input" placeholder="Email" aria-describedby="sizing-addon2" style="width: 50%" ng-model="email" required/>
+              <input type="password" class="form-control form-group login-input" placeholder="Password" aria-describedby="sizing-addon2" style="width: 50%" ng-model="password" required/>
+              <input type="password" class="form-control form-group login-input" placeholder="Confirm-Password" aria-describedby="sizing-addon2" style="width: 50%" required/>
+              <input type="text" class="form-control  login-input" placeholder="Date of Birth (DD-MM-YYYY)" aria-describedby="sizing-addon2" style="width: 50%" ng-model="dob" required>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-info" data-dismiss="modal" ng-click="userRegistration(name, email, password, dob)">Submit</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 
   <footer class="footer">

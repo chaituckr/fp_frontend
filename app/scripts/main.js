@@ -16,4 +16,4 @@ app.config(['$routeProvider',function($routeProvider){
 }]);
 
 
-var serviceModule = angular.module('ServiceModule',[])
+

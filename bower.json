@@ -6,7 +6,8 @@
     "modernizr": "~2.8.1",
     "angular-route": "^1.5.3",
     "angular": "^1.5.3",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.3"
   },
   "overrides": {
     "bootstrap-sass": {
